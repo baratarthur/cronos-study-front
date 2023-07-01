@@ -1,0 +1,46 @@
+@import url('https://fonts.cdnfonts.com/css/nunito');
+
+:root {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+
+  --background-primary: #121221;
+  --color-primary: #fefefe;
+  --color-accent: #fff;
+  --warning: #f14;
+  --success: #8f2;
+
+  color-scheme: dark light;
+  color: var(--color-primary);
+  background-color: var(--background-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-primary: #ffffff;
+    --color-primary: #213547;
+    --color-accent: #1f1f71;
+    --warning: #b13;
+    --success: #006400;
+  }
+}

@@ -1,0 +1,57 @@
+.modal {
+    background-color: var(--background-primary);
+    border: 1px solid var(--color-accent);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translate(-50%, -50%);
+}
+
+.modal header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.close-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: .25rem;
+    font-size: 1.25rem;
+    border-radius: .25rem;
+}
+
+.close-button:hover {
+    border-color: var(--color-accent);
+}
+
+.modal form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.modal form input {
+    padding: .5rem;
+    font-size: 1rem;
+    border: 1px solid var(--color-accent);
+    border-radius: .25rem;
+}
+
+.modal form button {
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
