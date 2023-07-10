@@ -42,7 +42,7 @@ export function CategoryList({data, refresh}: Props) {
 
     const deleteCategory = (categoryId: string) => {
         api.delete(`/category/${categoryId}`).then(() => {
-            toast.warning('Categoria adicionada com sucesso')
+            toast.warning('Categoria deletada com sucesso!')
             refresh()
         }).catch((error) => {
             toast.error(error.message)
